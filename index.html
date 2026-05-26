@@ -167,4 +167,212 @@
         .quote-box {
             background-color: #f7f9f6;
             border-left: 5px solid var(--primary-color);
-            border
+            border-right: 5px solid var(--secondary-color);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.01);
+        }
+
+        .quote-box p {
+            font-style: italic;
+            font-size: 1.35rem;
+            color: #1e3f20;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 1.5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .card {
+            background-color: var(--accent-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border-top: 5px solid var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card p {
+            color: #4a4e69;
+            font-size: 1.05rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            color: #4a4e69;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: var(--transition);
+            font-size: 1.05rem;
+        }
+
+        .btn-email {
+            background-color: var(--secondary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(209, 91, 143, 0.3);
+        }
+
+        .btn-email:hover {
+            background-color: #bd487c;
+            transform: translateY(-2px);
+        }
+
+        .btn-web {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(59, 107, 76, 0.3);
+        }
+
+        .btn-web:hover {
+            background-color: #2e543b;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #245266;
+            color: white;
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 6rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            section {
+                padding: 2rem 1.5rem;
+            }
+            .quote-box p {
+                font-size: 1.15rem;
+            }
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maestro di me stesso</h1>
+        <p>Percorsi di crescita, consapevolezza ed evoluzione sociale per l'infanzia e l'adolescenza</p>
+        
+        <div class="hero-image-container">
+            <img src="sito.jpg" alt="Illustrazione Maestro di me stesso" class="hero-image">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#progetto">Il Progetto</a>
+        <a href="#competenze">Aree di Intervento</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="progetto">
+            <h2>Chi Siamo & Visione</h2>
+            <div class="vision-text">
+                <p>
+                    Il progetto <strong>Maestro di me stesso</strong> nasce con l'obiettivo di accompagnare i bambini e gli adolescenti nello sviluppo della propria autoconsapevolezza, resilienza e intelligenza emotiva. In un mondo in costante mutamento, guidiamo i più giovani a diventare i veri protagonisti della propria crescita personale e sociale.
+                </p>
+            </div>
+            
+            <div class="quote-box">
+                <p>“PROGETTI EDUCATIVI PER ACCOMPAGNARE I BAMBINI ALLA SCOPERTA DEL SE’ IN UNA CRESCITA ARMONICA”</p>
+            </div>
+        </section>
+
+        <section id="competenze">
+            <h2>Aree di Competenza</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🧘‍♂️ Yoga & Mindfulness</h3>
+                    <p>Pratiche corporee, tecniche di respirazione (Pranayama) e giochi di consapevolezza adattati alle diverse fasce d'età. Aiutano a gestire lo stress, migliorare la concentrazione, favorire il rilassamento e sviluppare una sana percezione del proprio corpo.</p>
+                </div>
+                <div class="card">
+                    <h3>🌱 Progetti nel Sociale</h3>
+                    <p>Interventi mirati all'inclusione, alla gestione dei conflitti e alla cooperazione. Attraverso laboratori educativi e di gruppo, supportiamo l'infanzia e l'adolescenza nel superamento delle fragilità relazionali e nell'integrazione nel tessuto sociale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <h2>Contatti & Collaborazioni</h2>
+            <div class="contact-info">
+                <p>Sei una scuola, un centro sociale, un'associazione o un genitore interessato ai nostri percorsi? Siamo a disposizione per attivare progetti personalizzati, sessioni individuali o laboratori di gruppo.</p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:info@maestrodimestesso.it" class="btn btn-email">
+                        📧 Scrivici via Email
+                    </a>
+                    <a href="https://www.maestrodimestesso.it" class="btn btn-web">
+                        🌐 www.maestrodimestesso.it
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Maestro di me stesso. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
