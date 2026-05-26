@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestro di me stesso - Yoga e Sociale</title>
+    <style>
+        :root {
+            --primary-color: #4a7c59;
+            --secondary-color: #68b0ab;
+            --accent-color: #faf3dd;
+            --text-color: #2b2d42;
+            --light-bg: #f8f9fa;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .card {
+            background-color: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maestro di me stesso</h1>
+        <p>Percorsi di crescita, consapevolezza ed evoluzione sociale per l'infanzia e l'adolescenza</p>
+    </header>
+
+    <nav>
+        <a href="#progetto">Il Progetto</a>
+        <a href="#competenze">Aree di Intervento</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="progetto">
+            <h2>Chi Sono & Visione</h2>
+            <p>Il progetto <strong>Maestro di me stesso</strong> nasce con l'obiettivo di accompagnare i bambini e gli adolescenti nello sviluppo della propria autoconsapevolezza, resilienza e intelligenza emotiva. In un mondo in costante mutamento, guidiamo i più giovani a diventare i veri protagonisti della propria crescita personale e sociale.</p>
+        </section>
+
+        <section id="competenze">
+            <h2>Aree di Competenza</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Yoga & Mindfulness</h3>
+                    <p>Pratiche corporee, tecniche di respirazione (Pranayama) e giochi di consapevolezza adattati alle diverse fasce d'età. Aiutano a gestire lo stress, migliorare la concentrazione, favorire il rilassamento e sviluppare una sana percezione del proprio corpo.</p>
+                </div>
+                <div class="card">
+                    <h3>Progetti nel Sociale</h3>
+                    <p>Interventi mirati all'inclusione, alla gestione dei conflitti e alla cooperazione. Attraverso laboratori educativi e di gruppo, supportiamo l'infanzia e l'adolescenza nel superamento delle fragilità relazionali e nell'integrazione nel tessuto sociale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatti">
+            <h2>Contatti & Collaborazioni</h2>
+            <p>Sei una scuola, un centro sociale o un genitore interessato ai percorsi? Puoi scrivermi per attivare progetti personalizzati, sessioni individuali o laboratori di gruppo.</p>
+            <br>
+            <p>📧 Email: <a href="mailto:tua-email@esempio.com" style="color: var(--secondary-color);">tua-email@esempio.com</a></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Maestro di me stesso. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
