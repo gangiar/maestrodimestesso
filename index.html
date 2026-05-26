@@ -11,7 +11,7 @@
         :root {
             --primary-color: #3b6b4c; /* Verde scuro ispirato all'albero */
             --secondary-color: #d15b8f; /* Rosa/viola ispirato ai fiori */
-            --accent-bg: #fdfaf2; /* Sfondo crema caldo e rilassante */
+            --accent-bg: rgba(253, 250, 242, 0.85); /* Sfondo crema semi-transparente per le schede */
             --text-color: #2b2d42;
             --white: #ffffff;
             --shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -32,19 +32,26 @@
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.7;
             color: var(--text-color);
-            background-color: var(--accent-bg);
+            
+            /* Sfondo aggiornato con estensione .jpeg */
+            background-image: linear-gradient(to bottom, rgba(253, 250, 242, 0.8), rgba(253, 250, 242, 0.92)), url('sito.jpeg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         header {
-            background-color: var(--white);
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
             text-align: center;
-            padding: 3rem 1rem 2rem 1rem;
+            padding: 4rem 1rem;
             border-bottom: 1px solid rgba(0,0,0,0.03);
         }
 
         header h1 {
             color: #245266; /* Blu petrolio come la scritta nel disegno */
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 400;
@@ -52,33 +59,12 @@
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: var(--text-color);
             opacity: 0.8;
             max-width: 700px;
-            margin: 0 auto 2rem auto;
-            font-style: italic;
-        }
-
-        /* Stile per l'illustrazione principale */
-        .hero-image-container {
-            max-width: 650px;
             margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        .hero-image {
-            width: 100%;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: var(--shadow);
-            display: block;
-            transition: var(--transition);
-        }
-        
-        .hero-image:hover {
-            transform: scale(1.01);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            font-style: italic;
         }
 
         nav {
@@ -125,16 +111,18 @@
 
         .container {
             max-width: 1100px;
-            margin: 3rem auto;
+            margin: 4rem auto;
             padding: 0 1.5rem;
         }
 
         section {
-            background: var(--white);
+            background: rgba(255, 255, 255, 0.92); /* Sfondo bianco semi-trasparente */
+            backdrop-filter: blur(10px);
             padding: 3.5rem;
             margin-bottom: 3rem;
             border-radius: 16px;
             box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         h2 {
@@ -165,7 +153,7 @@
 
         /* Box in evidenza per la tua frase */
         .quote-box {
-            background-color: #f7f9f6;
+            background-color: rgba(59, 107, 76, 0.06);
             border-left: 5px solid var(--primary-color);
             border-right: 5px solid var(--secondary-color);
             padding: 2rem;
@@ -173,7 +161,6 @@
             text-align: center;
             max-width: 850px;
             margin: 0 auto;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.01);
         }
 
         .quote-box p {
@@ -192,15 +179,17 @@
         }
 
         .card {
-            background-color: var(--accent-bg);
+            background-color: rgba(253, 250, 242, 0.7);
             padding: 2.5rem;
             border-radius: 12px;
             border-top: 5px solid var(--primary-color);
             transition: var(--transition);
+            border: 1px solid rgba(255,255,255,0.6);
         }
 
         .card:hover {
             transform: translateY(-5px);
+            background-color: rgba(253, 250, 242, 0.9);
             box-shadow: 0 12px 25px rgba(0,0,0,0.04);
         }
 
@@ -273,11 +262,12 @@
         }
 
         footer {
-            background-color: #245266;
+            background-color: rgba(36, 82, 102, 0.95);
+            backdrop-filter: blur(5px);
             color: white;
             text-align: center;
             padding: 2.5rem;
-            margin-top: 6rem;
+            margin-top: 8rem;
             font-size: 0.95rem;
             letter-spacing: 0.5px;
         }
@@ -311,68 +301,3 @@
     <header>
         <h1>Maestro di me stesso</h1>
         <p>Percorsi di crescita, consapevolezza ed evoluzione sociale per l'infanzia e l'adolescenza</p>
-        
-        <div class="hero-image-container">
-            <img src="sito.jpeg" alt="Illustrazione Maestro di me stesso" class="hero-image">
-        </div>
-    </header>
-
-    <nav>
-        <a href="#progetto">Il Progetto</a>
-        <a href="#competenze">Aree di Intervento</a>
-        <a href="#contatti">Contatti</a>
-    </nav>
-
-    <div class="container">
-        
-        <section id="progetto">
-            <h2>Chi Siamo & Visione</h2>
-            <div class="vision-text">
-                <p>
-                    Il progetto <strong>Maestro di me stesso</strong> nasce con l'obiettivo di accompagnare i bambini e gli adolescenti nello sviluppo della propria autoconsapevolezza, resilienza e intelligenza emotiva. In un mondo in costante mutamento, guidiamo i più giovani a diventare i veri protagonisti della propria crescita personale e sociale.
-                </p>
-            </div>
-            
-            <div class="quote-box">
-                <p>“PROGETTI EDUCATIVI PER ACCOMPAGNARE I BAMBINI ALLA SCOPERTA DEL SE’ IN UNA CRESCITA ARMONICA”</p>
-            </div>
-        </section>
-
-        <section id="competenze">
-            <h2>Aree di Competenza</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🧘‍♂️ Yoga & Mindfulness</h3>
-                    <p>Pratiche corporee, tecniche di respirazione (Pranayama) e giochi di consapevolezza adattati alle diverse fasce d'età. Aiutano a gestire lo stress, migliorare la concentrazione, favorire il rilassamento e sviluppare una sana percezione del proprio corpo.</p>
-                </div>
-                <div class="card">
-                    <h3>🌱 Progetti nel Sociale</h3>
-                    <p>Interventi mirati all'inclusione, alla gestione dei conflitti e alla cooperazione. Attraverso laboratori educativi e di gruppo, supportiamo l'infanzia e l'adolescenza nel superamento delle fragilità relazionali e nell'integrazione nel tessuto sociale.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contatti">
-            <h2>Contatti & Collaborazioni</h2>
-            <div class="contact-info">
-                <p>Sei una scuola, un centro sociale, un'associazione o un genitore interessato ai nostri percorsi? Siamo a disposizione per attivare progetti personalizzati, sessioni individuali o laboratori di gruppo.</p>
-                
-                <div class="contact-buttons">
-                    <a href="mailto:info@maestrodimestesso.it" class="btn btn-email">
-                        📧 Scrivici via Email
-                    </a>
-                    <a href="https://www.maestrodimestesso.it" class="btn btn-web">
-                        🌐 www.maestrodimestesso.it
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Maestro di me stesso. Tutti i diritti riservati.</p>
-    </footer>
-
-</body>
-</html>
